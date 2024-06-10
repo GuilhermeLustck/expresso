@@ -1,0 +1,7 @@
+{
+  "name": "expresso",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
