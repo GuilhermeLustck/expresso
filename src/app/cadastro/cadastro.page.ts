@@ -75,12 +75,8 @@ export class CadastroPage implements OnInit {
     if( this.Email != "" && this.statusSenha){
 
       this.erro="foi"
-
-      
       //enviando ao service para o cadastro
       await this.sev.cadas(this.Email,this.Senha)
-
-      
     }else{
 
       this.erro="falta" + this.Email
