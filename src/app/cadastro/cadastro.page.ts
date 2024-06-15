@@ -72,7 +72,7 @@ export class CadastroPage implements OnInit {
 
   async cadastro01(){
 
-    if(this.CPF != "" && this.Email != "" && this.Nome != "" ){
+    if( this.Email != "" && this.statusSenha){
 
       this.erro="foi"
 
