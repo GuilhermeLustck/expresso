@@ -1,0 +1,24 @@
+<ion-buttons slot="start">
+  <ion-menu-button menu="main-menu"></ion-menu-button>
+</ion-buttons>
+<main class="corpo">
+  
+  <h1 class="title">Login</h1>
+  <form class="Form">
+    <h1>{{erro}}</h1>
+    <section class="block">
+      <label>Email</label><br>
+      <input type="email" placeholder="Email" class="input" [(ngModel)]="email" name="email"><br>
+    </section>
+
+    <section class="block">
+      <label>Senha</label><br>
+      <input type="password" placeholder="Senha" class="input"  [(ngModel)]="senha" name="senha"><br>
+    </section>
+    <button class="login" (click)="valid()">Entrar</button>
+
+
+  </form>
+
+
+</main>

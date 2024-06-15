@@ -1,0 +1,68 @@
+<ion-buttons slot="start">
+  <ion-menu-button menu="main-menu"></ion-menu-button>
+</ion-buttons>
+<main class="corpo">
+  
+  <form class="Form">
+    <h1>{{ erro }}</h1>
+    <section class="block">
+      <label>Nome Completo</label><br>
+      <input type="text" placeholder="Nome Completo" class="input" [(ngModel)]="Nome" name="Nome"><br>
+    </section>
+
+    <section class="block">
+      <label>Email</label><br>
+      <input type="email" 
+      placeholder="Email" 
+      class="input" 
+      [(ngModel)]="Email" 
+      name="Email"><br>
+    </section>
+
+    <section class="block">
+      <label>Senha</label><br>
+      <input type="password" 
+      placeholder="Senha"
+      class="input" 
+      (keyup)="validsenha()" 
+      [ngClass]="cssSenha1" 
+      [(ngModel)]="Senha" 
+      name="Senha"><br>
+    </section>
+
+    <section class="block">
+      <label>Confirmar Senha</label><br>
+      <input type="password" 
+      placeholder="Senha" 
+      class="input" 
+      (keyup)="validsenha()" 
+      [ngClass]="cssSenha2" 
+      [(ngModel)]="confSenha" 
+      name="confSenha"><br>
+    </section>
+
+    <section class="block">
+      <label>Telefone</label><br>
+      <input type="tel" placeholder="Telefone" class="input" [(ngModel)]="Tel" maxlength="12" name="Tel"><br>
+    </section>
+
+    <section class="block">
+      <label>CPF</label><br>
+      <input type="number" placeholder="CPF" class="input" [(ngModel)]="CPF" name="CPF"><br>
+    </section>
+
+    <section class="block">
+      <label>CEP</label><br>
+      <input type="number" placeholder="CEP" class="input" [(ngModel)]="cep" name="cep" ><br>
+    </section>
+
+   
+    
+
+
+    <button type="button" class="cadas" [disabled]="status" (click)="cadastro01()">Cadastrar</button>
+  </form>
+</main>
+
+
+
